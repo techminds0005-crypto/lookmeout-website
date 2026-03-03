@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoOKMEouT Blog | Digital Trends & Health Insights</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f0f1a;
+color:#fff;
+line-height:1.6;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#111122;
+}
+
+nav h1{
+color:#00f7ff;
+font-weight:800;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+}
+
+nav a:hover{
+color:#00f7ff;
+}
+
+/* HERO */
+.blog-hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,#111122,#1c1c3c);
+}
+
+.blog-hero h2{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.blog-hero p{
+color:#ccc;
+}
+
+/* LAYOUT */
+.container{
+display:grid;
+grid-template-columns:3fr 1fr;
+gap:40px;
+padding:60px 10%;
+}
+
+/* BLOG POSTS */
+.post{
+background:#1b1b2e;
+padding:25px;
+border-radius:15px;
+margin-bottom:30px;
+transition:0.3s;
+}
+
+.post:hover{
+transform:translateY(-5px);
+background:#25254a;
+}
+
+.post h3{
+color:#00f7ff;
+margin-bottom:10px;
+}
+
+.post p{
+color:#ccc;
+margin-bottom:15px;
+}
+
+.read-more{
+display:inline-block;
+padding:8px 20px;
+background:#00f7ff;
+color:#000;
+border-radius:20px;
+text-decoration:none;
+font-weight:600;
+}
+
+/* SIDEBAR */
+.sidebar{
+background:#111122;
+padding:25px;
+border-radius:15px;
+height:fit-content;
+}
+
+.sidebar h4{
+margin-bottom:15px;
+color:#00f7ff;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar ul li{
+margin-bottom:10px;
+}
+
+.sidebar ul li a{
+text-decoration:none;
+color:#ccc;
+}
+
+.sidebar ul li a:hover{
+color:#00f7ff;
+}
+
+.search-box input{
+width:100%;
+padding:10px;
+border:none;
+border-radius:20px;
+margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#0a0a12;
+color:#777;
+margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.container{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<h1>LoOKMEouT</h1>
+<div>
+<a href="index.html">Home</a>
+<a href="#">Trends</a>
+<a href="#">Health</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+
+<div class="blog-hero">
+<h2>Digital Truth. Health Reality.</h2>
+<p>Breaking down digital trends & exposing hidden health facts.</p>
+</div>
+
+<div class="container">
+
+<!-- BLOG POSTS -->
+<div>
+
+<div class="post">
+<h3>Is AI Replacing Human Creativity?</h3>
+<p>Artificial Intelligence is evolving rapidly. But is it enhancing human creativity or slowly replacing it? Here’s what experts say.</p>
+<a href="#" class="read-more">Read More</a>
+</div>
+
+<div class="post">
+<h3>The Hidden Chemicals in Festival Colors</h3>
+<p>Many synthetic dyes contain industrial compounds that may irritate skin and eyes. We break down what you should know.</p>
+<a href="#" class="read-more">Read More</a>
+</div>
+
+<div class="post">
+<h3>Screen Time & Mental Health Crisis</h3>
+<p>Excessive digital consumption is linked to anxiety, sleep disruption, and dopamine imbalance. Learn how to reset.</p>
+<a href="#" class="read-more">Read More</a>
+</div>
+
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+<div class="search-box">
+<input type="text" placeholder="Search articles...">
+</div>
+
+<h4>🔥 Trending Topics</h4>
+<ul>
+<li><a href="#">AI & Society</a></li>
+<li><a href="#">Longevity Science</a></li>
+<li><a href="#">Digital Detox</a></li>
+<li><a href="#">Hidden Chemicals</a></li>
+</ul>
+
+<h4 style="margin-top:30px;">📩 Join Newsletter</h4>
+<input type="email" placeholder="Enter email" style="width:100%;padding:10px;border-radius:20px;border:none;margin-top:10px;">
+<button style="margin-top:10px;width:100%;padding:10px;border:none;border-radius:20px;background:#00f7ff;font-weight:600;">Subscribe</button>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 LoOKMEouT | Digital Trends & Health
+</footer>
+
+</body>
+</html>

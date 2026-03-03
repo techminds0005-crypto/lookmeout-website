@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoOKMEouT Video Article</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0f0f1a;color:#fff;}
+nav{display:flex;justify-content:space-between;padding:20px 10%;background:#111122;}
+nav h1{color:#00f7ff;}
+.container{max-width:900px;margin:auto;padding:50px 20px;text-align:center;}
+input{width:70%;padding:12px;border-radius:30px;border:none;}
+button{padding:12px 25px;border:none;border-radius:30px;background:#00f7ff;font-weight:600;margin-left:10px;}
+.video-wrapper{position:relative;padding-bottom:56.25%;height:0;margin-top:30px;display:none;}
+.video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+footer{text-align:center;padding:20px;background:#0a0a12;color:#777;margin-top:60px;}
+</style>
+</head>
+<body>
+
+<nav>
+<h1>LoOKMEouT</h1>
+</nav>
+
+<div class="container">
+
+<h1>Paste YouTube Link</h1>
+
+<input type="text" id="youtubeLink" placeholder="Paste YouTube URL">
+<button onclick="embedVideo()">Embed</button>
+
+<div class="video-wrapper" id="videoContainer">
+<iframe id="videoFrame" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</div>
+
+<footer>
+© 2026 LoOKMEouT
+</footer>
+
+<script>
+function extractVideoID(url){
+let regExp=/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([^&\n?#]+)/;
+let match=url.match(regExp);
+return(match&&match[1])?match[1]:null;
+}
+function embedVideo(){
+let url=document.getElementById("youtubeLink").value;
+let id=extractVideoID(url);
+if(id){
+document.getElementById("videoFrame").src="https://www.youtube.com/embed/"+id;
+document.getElementById("videoContainer").style.display="block";
+}else{
+alert("Invalid link");
+}
+}
+</script>
+
+</body>
+</html>
